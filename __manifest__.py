@@ -3,11 +3,10 @@
     'name': "ProinCR Customizations",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Customizations for Proin""",
 
     'description': """
-        Long description of module's purpose
+        many Customizations for Proin
     """,
 
     'author': "Avalantec",
@@ -17,18 +16,16 @@
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '0.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base','sale_management', 'stock', 'purchase'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
         'views/report_saleorder_document_inherited.xml',
-        #'views/report_purchasequotation_document_inhereted.xml',
         'views/report_purchaseorder_document_inhereted.xml',
         'views/external_layout_proin.xml',
     ],
