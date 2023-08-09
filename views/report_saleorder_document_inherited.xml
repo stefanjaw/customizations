@@ -109,6 +109,11 @@
       <attribute name="class">text-center</attribute>
   </xpath>
   
+  <xpath expr="//tbody" position="attributes">
+    <attribute name="class">sale_tbody</attribute>
+    <attribute name="style">font-size: 13px</attribute>
+  </xpath>
+
   <xpath expr="//td[@name='td_name']" position="before">
     <td><span t-esc="line_index+1"/></td>
   </xpath>
