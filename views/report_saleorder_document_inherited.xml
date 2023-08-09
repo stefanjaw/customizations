@@ -2,11 +2,7 @@
 <odoo>
    <template id="report_saleorder_document_inherited" inherit_id="sale.report_saleorder_document">
 
-
-
-
-
-<data>
+<!-- <data> -->
   <xpath expr="//t[@t-set='doc']" position="after">
       <style t-if="doc.company_id == env.ref('base.main_company')">
   .encabezado{border-top:2px solid #f78b38;border-bottom:2px solid #f78b38; background-color: #f5f5f5}.encabezado .titulo{color:#f78b38}.panel{border:2px solid #f78b38}.panel .panel-heading{background-color:#f78b38}table thead{background-color:#f78b38} .font-white{color:#FFFFFF;font-weight: bold;} .line{display: inline}
@@ -128,30 +124,10 @@
   </xpath>
 
   <xpath expr="//p[@id='fiscal_position_remark']" position="after">
-      <p t-if="doc.note">Observaciones</p>
       <xpath expr="//p[@name='order_note']" position="move"/>
-    
   </xpath>
 
-</data>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- </data> -->
 
        
    </template>
