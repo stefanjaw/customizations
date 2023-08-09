@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-   <template id="report_purchaseorder_document_inherited" inherit_id="purchase.report_purchaseorder_document">
+   <template id="report_purchaseorder_document_inherited" name="report_purchaseorder_document_inherited_proincr" inherit_id="purchase.report_purchaseorder_document">
 
       <xpath expr="//t[@t-set='address']/.." position="replace"></xpath>
 
