@@ -7,7 +7,7 @@ class StockMoveLineCustom(models.Model):
 
     #1651242870
     automate = fields.Char(compute="automation")
-    partner_id = fields.Many2one('res.partner', translate=True)
+    partner_id = fields.Many2one('res.partner')
     
     def automation(self):
         for record in self:
